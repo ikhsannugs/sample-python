@@ -1,1 +1,1 @@
-# sample-python2
+# sample-python
