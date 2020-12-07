@@ -14,7 +14,7 @@ class ViewTest(unittest.TestCase):
 
 	def test_unit_home(self):
 		response = self.app.get('/')
-		self.assertEqual(response.status_code, 300)
+		self.assertEqual(response.status_code, 200)
 
 	def test_unit_contact(self):
 		response = self.app.get('/contact')
@@ -22,7 +22,7 @@ class ViewTest(unittest.TestCase):
 
 	def test_unit_about(self):
 		response = self.app.get('/about')
-		self.assertEqual(response.status_code, 300)
+		self.assertEqual(response.status_code, 200)
 
 if __name__ == '__main__':
     unittest.main()
