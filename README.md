@@ -1,1 +1,1 @@
-# sample-pythonvm
+# sample-python
