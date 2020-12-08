@@ -16,8 +16,8 @@ pipeline {
       stage('Deploy') {
         steps{
           sshagent(credentials : ['ssh-ikhsan']) {
-            sh 'ssh -o StrictHostKeyChecking=no ikhsan@34.101.235.214 "rm -rf sample-python; git clone https://github.com/ikhsannugs/sample-python.git"'
-            sh 'ssh -o StrictHostKeyChecking=no ikhsan@34.101.235.214 "cd /home/ikhsan/sample-python; rm -rf .git Jenkinsfile Tests README.md"'
+            sh 'ssh -o StrictHostKeyChecking=no ikhsan@34.101.148.110 "rm -rf sample-python; git clone https://github.com/ikhsannugs/sample-python.git"'
+            sh 'ssh -o StrictHostKeyChecking=no ikhsan@34.101.148.110 "cd /home/ikhsan/sample-python; rm -rf .git Jenkinsfile Tests README.md"'
           }
         }
       } 
